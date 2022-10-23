@@ -13,6 +13,9 @@ public class PhoneBook {
     }
 
     public void addPhoneNumber(String name, String phone) {
-        phoneBook.put(phone, name);
+        if (name != null && !name.isEmpty() && !name.isBlank() &&
+                phone != null && !phone.isBlank() && !phone.isEmpty()) {
+            phoneBook.put(phone, name);
+        }
     }
 }
