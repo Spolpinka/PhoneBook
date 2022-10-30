@@ -2,18 +2,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PhoneBook {
-    private HashMap<String, String> phoneBook;
+    private static HashMap<String, String> phoneBook = new HashMap<>();
 
     public PhoneBook() {
         phoneBook = new HashMap<>();
     }
-    //а здесь комментарий о том, что это не обычная книга, а телефонная
 
-    public HashMap<String, String> getPhoneBook() {
+    public static HashMap<String, String> getPhoneBook() {
         return phoneBook;
     }
 
-    public void addPhoneNumber(String name, String phone) {
+    public static void addPhoneNumber(String name, String phone) {
         if (name != null && !name.isEmpty() && !name.isBlank() &&
                 phone != null && !phone.isBlank() && !phone.isEmpty()) {
             phoneBook.put(phone, name);
