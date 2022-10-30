@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PhoneBook {
-    private static HashMap<String, String> phoneBook;
+    private static HashMap<String, String> phoneBook = new HashMap<>();
 
     public PhoneBook() {
         phoneBook = new HashMap<>();
