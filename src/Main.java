@@ -11,5 +11,7 @@ public class Main {
         for (Map.Entry<String, String> entry: PhoneBook.getPhoneBook().entrySet()) {
             System.out.println("Имя абонента: " + entry.getValue() + ", телефон: " + entry.getKey());
         }
+        System.out.println("конец работы программы!");
     }
+
 }
