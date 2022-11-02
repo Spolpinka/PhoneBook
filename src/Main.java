@@ -12,6 +12,7 @@ public class Main {
             System.out.println("Имя абонента: " + entry.getValue() + ", телефон: " + entry.getKey());
         }
         System.out.println("конец работы программы!");
+        System.out.println("проверка не трубуется");
     }
 
 }
